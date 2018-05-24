@@ -1,0 +1,24 @@
+<ion-content no-padding style="background-color: #F0F0F0 !important;">
+  <div class="contenido">
+    <ion-row no-padding class="barra-header">
+        <ion-col col-2>
+        <button ion-button clear icon-only start color="light" (click)="general.menu()">
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        </ion-col>
+        <ion-col col-8 text-center>
+        <h1 style="font-weight: bold !important;">Modo Riego</h1>
+        <h2 hidden style="font-weight: bold !important;"> Cooprinsem</h2>
+        </ion-col>
+    </ion-row>
+    
+    
+    <div id="graph" style="display: block;"	></div>
+
+</div>
+
+<div class="read-only-val"> <div class="tag"> Humedad Instantanea </div> <div class="val" #humedadVal> {{humedad[1]}} % </div></div>
+<button class="btn-main no-bg" ion-button large (click)="regar()"><ion-icon name="leaf"></ion-icon> Iniciar Riego</button>
+
+</ion-content>
+

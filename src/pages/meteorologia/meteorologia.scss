@@ -1,0 +1,93 @@
+page-meteorologia {
+    font-size: 1.5vh;
+    .wind-tag{
+        font-size: 1.8em !important;
+    }
+    #compass{
+        font-size: 1.4em;
+        background-color: white;
+        border: 3px solid grey;
+        width: 25vw;
+        height: 25vw;
+        border-radius: 50%;
+        box-shadow: 3px 3px 6px black;
+        display: table;
+        padding: 0;
+        
+        #compass-pointer{
+            width: 100%;
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 3em;
+            //position: absolute;
+            //top: 0;
+            //left: 0;
+        }
+        #pointer{
+            font-size: 2.5em;
+            //position: absolute;
+            //top: 0;
+            //left: 0;
+            color: #6B8EFB;
+        }
+        #compass-center-row{
+            height: 70%;
+        }
+
+        
+
+    }
+
+    #_compass{
+        font-size: 1.4em;
+        //background-color: white;
+        //border: 3px solid grey;
+        width: 25vw;
+        height: 25vw;
+        //border-radius: 50%;
+        display: table;
+        padding: 0;
+        background-image: url('../assets/imgs/Brujula.svg');
+        background-size: 130%;
+        background-position: center;
+        
+        #_pointer{
+            font-size: 2.5em;
+            //position: absolute;
+            //top: 0;
+            //left: 0;
+            display: table-cell;
+            vertical-align: middle;
+            width: 100%;
+            text-align: center;
+            color: #6B8EFB;
+        }
+
+    }
+
+
+    .wind{
+        width: 70%;
+        padding: 1vw;
+        margin-bottom: 1em;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px black;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .expo{
+        display:inline-block;
+        vertical-align:text-top;
+        font-size: 0.6em;
+    }
+
+    .read-only-val{
+        height: 2.5em;
+        //font-size: 2.1em;
+        box-shadow: none !important;
+    }
+}

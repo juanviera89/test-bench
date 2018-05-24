@@ -1,0 +1,33 @@
+page-tanque {
+    
+    .btn-main{
+        font-size: 1.2em;
+        .button-inner{
+            //text-align: left !important;
+            justify-content: center !important;
+            margin: 0;
+            //align-content: left !important;
+            //align-content: left !important;
+        }
+    }
+
+    .read-only-val{
+        font-size: 1.2em;
+        .tag{
+            width: 60%;
+        }
+    }
+
+    .vol-slider{
+        margin-top: 0.8em;
+        margin-bottom: 0.5em;
+        background-color: white;
+        width: 100%;
+        //margin-left: 10%;
+        //margin-right: 10%;
+        height: 3em;
+        border-bottom: 2px solid #66b1f4;
+        box-shadow: 0px 1px 2px #757575;
+    }
+
+}

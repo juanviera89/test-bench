@@ -1,0 +1,26 @@
+<ion-content no-padding>
+  <div class="contenido">
+    <ion-row no-padding class="barra-header">
+        <ion-col col-2>
+        <button hidden ion-button clear icon-only start color="light" (click)="general.menu()">
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        </ion-col>
+        <ion-col col-8>
+        <h1 style="font-weight: bold !important;">Simulador de riego <br> interactivo</h1>
+        <h2 hidden style="font-weight: bold !important;"> Interactivo</h2>
+        <h3 hidden style="font-weight: lighter !important;"> Cooprinsem</h3> 
+        </ion-col>
+    </ion-row>
+    <ion-item class="codigo-input">
+      <ion-label>Código:</ion-label>
+      <ion-input type="text" placeholder="Código único de prueba" [(ngModel)]="communication.authCode" ></ion-input>
+    </ion-item>
+    <button class="btn-main with-bg" ion-button large (click)="toRiego()"><ion-icon name="leaf"></ion-icon>Riego</button>
+    <button class="btn-main with-bg" ion-button large (click)="toTanque()"><ion-icon name="beaker"></ion-icon>Estanque</button>
+</div>
+<button class="btn-main no-bg" ion-button large (click)="toRecirculacion()"><ion-icon name="sync"></ion-icon>Recirculación</button>
+<!-- <button class="btn-main no-bg" ion-button large><ion-icon name="speedometer"></ion-icon>Monitor</button> -->
+<button class="btn-main no-bg" ion-button large (click)="toMeteorologia()"><ion-icon name="partly-sunny"></ion-icon>Meteorología</button> 
+<button class="btn-main no-bg" ion-button large (click)="toPeso()"><ion-icon name="download"></ion-icon>Pesaje</button> 
+</ion-content>

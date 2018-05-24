@@ -1,0 +1,27 @@
+
+<ion-content no-padding style="background-color: #F0F0F0 !important;">
+    <div class="contenido">
+      <ion-row no-padding class="barra-header">
+          <ion-col col-2>
+          <button ion-button clear icon-only start color="light" (click)="general.menu()">
+              <ion-icon name="menu"></ion-icon>
+          </button>
+          </ion-col>
+          <ion-col col-8 text-center>
+          <h1 style="font-weight: bold !important;">Modo Pesaje</h1>
+          <h2 hidden style="font-weight: bold !important;"> Cooprinsem</h2>
+          </ion-col>
+      </ion-row>
+
+      <div id="graphG" style="display: block;"	></div>
+
+    </div>
+
+    <br>
+
+    <ion-item class="read-only-val codigo-input"> 
+        <ion-input type="text" placeholder="Mensaje de pantalla" [(ngModel)]="displayStr" ></ion-input>
+        <button ion-button item-right clear icon-only (click)="setDisplay();"><ion-icon  name="send" class="send-icon"></ion-icon></button>
+      </ion-item>
+
+</ion-content>

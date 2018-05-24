@@ -1,0 +1,35 @@
+<ion-menu [content]="mycontent" id="mainMenu" type="overlay">
+    <ion-content >
+      <ion-list>
+        <button class="btn-menu" color="menubg" ion-item (click)="goBack()">
+            <ion-icon  class="ico-menu" name="home"></ion-icon>
+           <p  class="txt-menu" >Menú</p>
+        </button>
+        <button class="btn-menu" color="menubg" ion-item (click)="toRiego()">
+            <ion-icon  class="ico-menu" name="leaf"></ion-icon>
+           <p  class="txt-menu" >Riego</p>
+        </button>
+        <button class="btn-menu" color="menubg" ion-item (click)="toTanque()">
+            <ion-icon  class="ico-menu" name="beaker"></ion-icon>
+           <p  class="txt-menu" >Estanque</p>
+        </button>
+        <button class="btn-menu" color="menubg" ion-item (click)="toRecirculacion()">
+            <ion-icon  class="ico-menu" name="sync"></ion-icon>
+           <p  class="txt-menu" >Recirculación</p>
+        </button>
+        <!-- <button class="btn-menu" color="menubg" ion-item>
+            <ion-icon  class="ico-menu" name="speedometer"></ion-icon>
+           <p  class="txt-menu" >Monitor</p>
+        </button> -->
+        <button class="btn-menu" color="menubg" ion-item (click)="toMeteorologia()">
+            <ion-icon  class="ico-menu" name="partly-sunny"></ion-icon>
+           <p  class="txt-menu" >Meteorología</p>
+        </button>
+        <button class="btn-menu" color="menubg" ion-item (click)="toPeso()">
+            <ion-icon  class="ico-menu" name="download"></ion-icon>
+           <p  class="txt-menu" >Pesaje</p>
+        </button>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+<ion-nav #mycontent [root]="rootPage"></ion-nav>

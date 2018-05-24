@@ -1,0 +1,19 @@
+page-recirculacion {
+    font-size: 1.5vh;
+    .btn-main{
+        font-size: 1.8em;
+        text-align: center !important;
+        .button-inner{
+            //text-align: left !important;
+            justify-content: center !important;
+            margin: 0;
+            //align-content: left !important;
+            //align-content: left !important;
+        }
+    }
+
+    .read-only-val{
+        height: 4em;
+        font-size: 2.1em;
+    }
+}

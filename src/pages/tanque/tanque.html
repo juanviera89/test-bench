@@ -1,0 +1,35 @@
+
+
+<ion-content no-padding style="background-color: #F0F0F0 !important;">
+  <div class="contenido">
+    <ion-row no-padding class="barra-header">
+        <ion-col col-2>
+        <button ion-button clear icon-only start color="light" (click)="general.menu()">
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        </ion-col>
+        <ion-col col-8 text-center>
+        <h1 style="font-weight: bold !important;">Modo Estanque</h1>
+        <h2 hidden style="font-weight: bold !important;"> Cooprinsem</h2>
+        </ion-col>
+    </ion-row>
+
+    <ion-row class="graph-row">
+      <ion-col col-8>
+        <div class="read-only-val"> <div class="tag"> Volumen Actual </div> <div class="val"> <span #tanque>0</span> Lts </div></div>
+        <button class="btn-main with-bg" ion-button large (click)="llenar()"> Llenar tanque</button>
+        <button class="btn-main with-bg" ion-button large (click)="vaciar()"> Vaciar tanque</button>
+      </ion-col>
+      <ion-col col-4>
+        <div id="graph" style="display: block;height: 100%;"	></div>
+      </ion-col>
+    </ion-row>
+
+  </div>
+
+  <ion-item class="vol-slider">
+    <ion-badge item-start>{{vaciarVol}}</ion-badge><ion-range [(ngModel)]="vaciarVol" min="0" max="27" step="0.5"></ion-range>
+  </ion-item>
+  <button class="btn-main no-bg" ion-button large (click)="vaciarVolume(vaciarVol)"> Vaciar {{vaciarVol}} Lts</button>
+
+</ion-content>

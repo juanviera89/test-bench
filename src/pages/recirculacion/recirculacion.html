@@ -1,0 +1,36 @@
+
+<ion-content no-padding style="background-color: #F0F0F0 !important;">
+  <div class="contenido">
+    <ion-row no-padding class="barra-header">
+        <ion-col col-2>
+        <button ion-button clear icon-only start color="light" (click)="general.menu()">
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        </ion-col>
+        <ion-col col-8 text-center>
+        <h1 style="font-weight: bold !important;">Modo Recirculación</h1>
+        <h2 hidden style="font-weight: bold !important;"> Cooprinsem</h2>
+        </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="read-only-val"> <div class="tag"> Presión </div> <div class="val"> <span #presionElem> 0 </span> Bar </div></div>
+  <div class="read-only-val"> <div class="tag"> Flujo </div> <div class="val"> <span #flujo> 0 </span> cc/s </div></div>
+  <div class="read-only-val"> <div class="tag"> Corriente </div> <div class="val"> <span #corriente> 0 </span> A </div></div>
+
+  <ion-item class="vol-slider">
+    <ion-badge item-start>{{presion}}</ion-badge><ion-range [(ngModel)]="presion" min="0" max="100" step="0.5"></ion-range>
+  </ion-item>
+  <button class="btn-main no-bg" ion-button large (click)="ajustarPresion(presion)"> ajusta presion a {{presion}} Bar</button>
+
+  <ion-row no-padding>
+    <ion-col offset-3 col-3>
+      <button class="btn" ion-button large color="secondary" (click)="on()"><ion-icon name="power"></ion-icon> </button>
+    </ion-col>
+    <ion-col col-3>
+      <button class="btn" ion-button large color="danger"  (click)="off()"> <ion-icon name="radio-button-off"></ion-icon></button>
+    </ion-col>
+  </ion-row>
+
+
+</ion-content>

@@ -1,0 +1,32 @@
+page-peso {
+
+    .codigo-input{
+        font-weight: bold !important;
+        border: none !important;
+        
+    }
+    .item-inner{
+        border: none !important;
+        box-shadow: none !important;
+    }
+    .codigo-input{
+        .input{
+            font-style: italic;
+            font-size: 0.8em;
+                }
+    }
+
+    .codigo-input.input-has-value{
+        .input{
+            font-style: normal;
+                }
+    }
+
+    .read-only-val{
+        height: 1.2em;
+    }
+
+    .send-icon{
+        color: #6B8EFB;
+    }
+}

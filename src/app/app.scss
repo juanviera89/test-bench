@@ -1,0 +1,152 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.highcharts-credits{
+    visibility: hidden !important;
+}
+
+ion-menu{
+    max-width: 34vw !important;
+    .item-inner{
+        border: none !important;
+    }
+}
+
+#mainMenu{
+    width: 34vw;
+    //box-shadow: 2px 0px 10px 0px #5777D6;
+    ion-content{
+        background-color: #6B8EFB !important;
+    }
+}
+
+.btn-menu{
+    width: 34vw;
+    text-align: center;
+    background-color: #6B8EFB !important;
+    color: white;
+    border: none !important;
+}
+.ico-menu{
+    text-align: center;
+    font-size: 3em;
+}
+.txt-menu{
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.2em !important;
+}
+.contenido {
+    // background: #7787f8; /* Old browsers */
+    // background: -moz-linear-gradient(top, #7787f8 0%, #58dfee 25%, #FFFFFF 25.01%); /* FF3.6-15 */
+    // background: -webkit-linear-gradient(top, #7787f8 0%,#58dfee 25%,#FFFFFF 25.01%); /* Chrome10-25,Safari5.1-6 */
+    // background: linear-gradient(to bottom, #7787f8 0%,#58dfee 25%,#FFFFFF 25.01%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    background-repeat: no-repeat;
+    background-image: url("../assets/imgs/gradv.png");
+    background-size: 100% 100%;
+    //height: 25vh
+  }
+  .login_list ion-item {
+    background: none;
+    border: none !important;
+  }
+  .barra-header {
+    width: 100%;
+    background: transparent;
+    color: white;
+  }
+  .btn-main{
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+      height: 3.5em;
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      margin-top: 0.35em;
+      //font-weight: bold;
+      border-radius: 5px;
+      box-shadow: 0px 3px 2px #757575;
+      text-transform: uppercase;
+      ion-icon{
+          margin-right: 0.5em;
+          font-size: 2.5em;
+      }
+      .button-inner{
+          //text-align: left !important;
+          justify-content: flex-start !important;
+          margin-left: 0.5em;
+          //align-content: left !important;
+          //align-content: left !important;
+      }
+
+      
+  }
+  .with-bg{
+      //border: 2px solid #488aff;
+      background-color: white;
+      color: #66b1f4;
+       ;
+  }
+
+  .no-bg{
+      background-color: #66b1f4;
+      //color: #FFFFFF;
+      //box-shadow: 0px 3px 2px #757575 ;
+  }
+
+  .read-only-val{
+      margin-top: 0.8em;
+      margin-bottom: 0.5em;
+      background-color: white;
+      width: 100%;
+      //margin-left: 10%;
+      //margin-right: 10%;
+      height: 3em;
+      font-size: 1.8em;
+      display: table;
+      border-bottom: 2px solid #66b1f4;
+      box-shadow: 0px 1px 2px #757575;
+      .tag{
+          width: 70%;
+          text-align: center;
+          margin: 0;
+          height: 100%;
+          display: table-cell;
+          vertical-align: middle;
+
+      }
+
+      .val{
+          width: 28%;
+          text-align: left;
+          margin: 0;
+          height: 100%;
+          display: table-cell;
+          vertical-align: middle;
+      }
+  }
+  .vol-slider{
+    margin-top: 0.8em;
+    margin-bottom: 0.5em;
+    background-color: white;
+    width: 100%;
+    //margin-left: 10%;
+    //margin-right: 10%;
+    height: 3em;
+    border-bottom: 2px solid #66b1f4;
+    box-shadow: 0px 1px 2px #757575;
+}
